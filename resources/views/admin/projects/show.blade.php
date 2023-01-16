@@ -11,6 +11,10 @@
             <div class="placeholder p-5 bg-dark">No Image</div>
             @endif
             <h1>{{$project->title}}</h1>
+            <div class="category">
+                <strong>Type:</strong>
+                {{ $project->type ? $project->type->name : 'No type'}}
+            </div>
             <p>{{$project->description}}</p>
         </div>
     </div>
